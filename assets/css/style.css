@@ -89,3 +89,19 @@
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 612px) {
+    
+    .title {
+        text-align: center;    
+    }
+
+    .score {
+        position:absolute;
+        top: 180px;
+        width: 100vw;
+    }
+
+    .options {
+        width: 100vw;
+    }
+}
