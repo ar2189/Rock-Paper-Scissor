@@ -4,4 +4,88 @@
     box-sizing: border-box;
     background: rgb(33, 4, 4);
     color: rgb(255, 255, 254);
+    font-weight: bolder;
 }
+
+.game {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.score {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
+.p-count, .c-count {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.options {
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.rock, .paper, .scissor {
+    padding: 0.7rem;
+    width: 100px;
+    border-radius: 20px;
+    background: rgb(40, 22, 200);
+    outline: none;
+    border-color: rgb(17, 16, 16);
+}
+
+.rock:hover, .paper:hover, .scissor:hover {
+    box-shadow: 0 0.2rem 0 rgb(8, 114, 244, 0.6);
+    cursor: pointer;
+    transition: transform 120ms;
+    transform: scale(1.03);
+}
+
+.move {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 2px;
+    margin-bottom: 2.2rem;
+}
+
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgb(6, 93, 6);
+    outline: none;
+    border-color: rgb(17, 16, 16);
+}
+
+.reload:hover {
+    box-shadow: 0 0.2rem 0 rgba(10, 92, 16, 0.6);
+    cursor: pointer;
+    transition: transform 120ms;
+    transform: scale(1.03);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
