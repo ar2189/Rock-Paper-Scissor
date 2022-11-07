@@ -46,6 +46,7 @@
 }
 
 .rock, .paper, .scissor {
+    font-size: 15px;
     padding: 0.7rem;
     width: 100px;
     border-radius: 20px;
@@ -59,6 +60,7 @@
     cursor: pointer;
     transition: transform 120ms;
     transform: scale(1.03);
+    color: black;
 }
 
 .move {
@@ -87,6 +89,18 @@
 .result {
     margin-top: 20px;
     font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    color: silver;
+    position: absolute;
+    padding-top: 15px;
+    min-height: 80px;
+    bottom: 0;
 }
 
 @media screen and (max-width: 612px) {
