@@ -17,7 +17,7 @@ const game = () => {
 
                 const movesLeft = document.querySelector('.movesleft');
                 moves++;
-                movesLeft.innerText = `Moves Left: ${10-moves}`;
+                movesLeft.innerText = `Moves Left: ${15-moves}`;
                 
                 const choiceNumber = Math.floor(Math.random()*3);
                 const computerChoice = computerOptions[choiceNumber];
