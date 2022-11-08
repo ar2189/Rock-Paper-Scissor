@@ -24,7 +24,7 @@ const game = () => {
 
                 winner(this.innerText,computerChoice)
 
-                if(moves == 10){
+                if(moves == 15){
                     gameOver(playerOptions,movesLeft);
                 }
             })
