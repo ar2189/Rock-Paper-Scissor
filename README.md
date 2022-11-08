@@ -96,6 +96,13 @@ This site targets adults and children as a simple app to learn and have fun.
 <li>In the GitHub repository, navigate to the Sertings tab.</li>
 <li>From there go to <action>Pages</action> and select the Main Branch and save.</li>
 <li>Once saved, the page provided the link to the site.</li>
+</ul>
+
+<p>The live link can be found here: https://ar2189.github.io/Rock-Paper-Scissor/</p>
   
-The live link can be found here: <p></p>
+<h2>Credits</h2>
+  
+<ul>Content
+<li>Some of the css code were taken from a Youtube Channel: Web Dev Simplified</li>
+<li>The idea for the code for the JavaScript were taken from <action>codingninjas, geeksforgeeks and linuxhint</action>.</li>
 </ul>
