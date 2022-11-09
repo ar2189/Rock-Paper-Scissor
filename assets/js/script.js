@@ -1,8 +1,11 @@
+// Complete logic of the game inside this function
+
 const game = () => {
     let playerScore = 0;
     let computerScore = 0;
     let moves = 0;
 
+    //Function to
 
     const playGame = () => {
         const rockBtn = document.querySelector('.rock');
@@ -11,6 +14,7 @@ const game = () => {
         const playerOptions = [rockBtn, paperBtn, scissorBtn];
         const computerOptions = ['rock', 'paper', 'scissor']
 
+        // Function to start playing the game
 
         playerOptions.forEach(option => {
             option.addEventListener('click', function() {
@@ -21,15 +25,20 @@ const game = () => {
                 
                 const choiceNumber = Math.floor(Math.random()*3);
                 const computerChoice = computerOptions[choiceNumber];
+                
+                // Function to check who wins
 
                 winner(this.innerText,computerChoice)
-
+                
+                // Gmae over function after 15 moves
                 if(moves == 15){
                     gameOver(playerOptions,movesLeft);
                 }
             })
         })
     }
+    
+    // Function to decide winner
 
     const winner = (player,computer) => {
         const result = document.querySelector('.result');
@@ -75,7 +84,8 @@ const game = () => {
             }
         }
     }
-
+    
+    // Function to run when game is over
     const gameOver = (playerOptions, movesLeft) => {
         const chooseMove = document.querySelector('.move');
         const result = document.querySelector('.result');
@@ -110,8 +120,11 @@ const game = () => {
             window.location.reload();
         })
     }
-
+    
+    // Calling playGame function inside the game
     playGame();
 }
+
+// Calling the game function
 
 game();
